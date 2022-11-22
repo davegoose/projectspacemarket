@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Market</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e45c525a0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div>
+    <nav class="top-bar">
+      <a>Home</a>
+      <a onclick="cartOpen()">Cart</a>
+    </nav>
+  </div>
+  <div class="products-space">
+    <span>Products List</span>
+    <div class="products-container">
+      <div class="shoe-div midnight-navy">
+        <div class="img-with-details">
+          <img alt="image" src="images/midnight-navy.jpg" class="midnight">
+          <div class="overlay"><div class="text">“Midnight Navy” revisits the classic colorblocking of “Fire Red” with speckled support wings inspired by “White Cement.” White leather uppers dominate the style while hits of navy blue land on the cages and midsole. White netting adorns the throat and quarter panels</div></div>
+        </div>
+        <h1>
+          Midnight Navy's
+        </h1>
+        <br>
+        <button class="explore">explore</button>
+        <br>
+        <h2>Price - $210</h2>
+        <button onclick="addToCart1()" class="buttons">Add to cart</button>
+      </div>
+      <div class="shoe-div">
+        <div class="img-with-details">
+          <img alt="image" src="images/Retro High OG's.jpg" class="ignored">
+          <div class="overlay"><div class="text">This Retro High OG version goes all in with premium leather, comfortable cushioning and classic design details. The Air-Sole unit in the heel provides the same lightweight cushioning that MJ enjoyed back in his playing days. Genuine leather in the upper provides durability and structure with a luxe touch.</div></div>
+        </div>
+        <h1>
+         Retro High OG's
+        </h1>
+        <br>
+        <button class="explore">explore</button>
+        <br>
+        <h2>Price - $229</h2>
+        <button onclick="addToCart2()" class="buttons">Add to cart</button>
+  
+      </div>
+    </div>
+      <div class="products-container">
+        <div class="shoe-div">
+          <div class="img-with-details">
+            <img alt="image" src="images/French Blue.jpg" class="midnight">
+            <div class="overlay"><div class="text">The Air Jordan 1 Low 'Stealth French Blue' features a White leather base with Grey overlays while Blue covers the Swooshes and heel overlays. Blue lining, tongue Jumpman with Grey laces and rubber outsole atop a White midsole completes the design. Size: US6.
+            </div></div>
+          </div>
+          <div class="details">
+            <h1>
+            French Blue Kicks
+          </h1>
+          <br>
+        <button class="explore">explore</button>
+          <br>
+          <h2>Price - 200$</h2>
+                <button onclick="addToCart3()" class="buttons">Add to cart</button>
+    
+        </div>
+        </div>
+        <div class="shoe-div">
+          <div class="img-with-details">
+            <img alt="image" src="images/Cherry Sneakers.jpeg" class="midnight">
+            <div class="overlay"><div class="text">Air Jordan 11 Adapt 'White'
+              Designed by Tinker Hatfield, the Jordan 11 was the first Air Jordan to feature patent leather and carbon fiber in addition to cordura nylon. The original Jordan 11 was released from 1995-1996 in both mid cut and low cut IE colorways.</div></div>
+          </div>
+          <div class="details">
+            <h1>
+            Jordan 11
+          </h1>
+          <br>
+        <button class="explore">explore</button>
+          <br>
+          <h2>Price - 216$</h2>
+                <button onclick="addToCart4()" class="buttons">Add to cart</button>
+    
+        </div>
+        </div>
+      </div>
+  </div>
+  <div class="cart-container">
+    <div>
+      <nav class="top-bar">
+        <a onclick="goHome()">Home</a>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="cart-space">
+        <header>Cart</header>
+        <div class="cart-item"></div>
+      </div>
+      <div class="input-field">
+        <label for="name">Name on card</label>
+        <input placeholder="Name" type="text" name="name">
+        <label for="name">Card Number</label>
+        <input type="text" placeholder="1111 2222 3333 4444" name="card-number">
+        <label for="name">Expiration date</label>
+        <input type="text" placeholder="mm/yy" name="expire">
+        <label for="name">CVV</label>
+        <input type="text" placeholder="CVV" name="cvv">
+        <h2>Sub-total: </h2>
+        <h2>Shipping: </h2>
+        <h2>Total: </h2>
+        <button class="buttons">
+          Check out
+        </button>
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

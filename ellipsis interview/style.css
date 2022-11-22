@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body { 
+  font-family: Sono;
+  overflow-x: hidden;
+  text-align: center;
+}
+img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+  border-radius: 20px;
+}
+img:hover {
+  opacity: 0.5;
+  
+}
+.ignored {
+  height: auto;
+  width: 90%;
+}
+span {
+  padding: 0 12px;
+}
+.top-bar {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: rgb(210, 221, 221);
+}
+.products-container {
+  display: flex;
+  vertical-align: bottom;
+  text-align: center;
+}
+.top-bar a{
+  margin: 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.22s;
+}
+.top-bar a:hover{
+ text-decoration: underline;
+ color: white;
+ cursor: pointer;
+}
+.shoe-div {
+  background-color: rgb(153, 153, 153);
+  transition: all 0.4s ease;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+h1, h2 {
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+h2 {
+  font-size: 15px;
+}
+.buttons, .explore {
+  background-color: transparent;
+  border-color: #fff;
+  font-size: 15px;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  border-style: solid;
+  transition: all 0.4s ease;
+  padding: 10px;
+  margin: 10px;
+}
+
+.buttons:hover, .explore:hover {
+  border-color: aqua;
+  background-color: aqua;
+  color: grey;
+}
+.buttons:active, .explore:active {
+  border-color: grey;
+  background-color: grey;
+  color: grey;
+}
+.explore {
+  border: none;
+  color: white;
+  text-decoration: underline;
+}
+.explore:hover {
+  
+  color: grey;
+}
+.payment {
+  background-color: rgb(211, 211, 255);
+  width: 50%;
+  height: 100vh;
+  border-radius: 20px;
+  padding: 50px;
+}
+.cart-item {
+  padding: 10px;
+  vertical-align:top;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+.cart-container {
+  background-color: rgb(255, 255, 255);
+  vertical-align:top;
+  width: 50%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  transform: translateX(10000px);
+  
+}
+.cart-space {
+  height: auto;
+  width: 100%;
+  background-color: aliceblue;
+  color: grey;
+  padding: 10px;
+  padding-right: 10px;
+  font-size: 25px;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 2%;
+  margin-left: 20%;
+}
+.cart-h1, .cart-h2 {
+  color: grey;
+}
+.cart-img {
+  width: 90%;
+  height: 90%;
+}
+input {
+  padding: 10px ;
+  padding-left: 10px;
+  display: block;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #fff;
+  border-style: solid;
+  color: #fff;
+  opacity: 0.6;
+  height: max-content;
+  margin-bottom: 5px;
+}
+.input-field {
+  background-color: rgb(139, 139, 255);
+  width: 100%;
+  height: 100vh;
+  border-radius: 20px;
+  padding: 50px;
+  text-align: left;
+}
+label {
+  color: #fff;
+}
+.newDiv {
+  width: 100%;
+  height: 100%;
+  background-color:rgb(206, 206, 206);
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  align-items: center;
+  vertical-align: top;
+  margin: 10px;
+}
+.newDiv:hover {
+  background-color: rgb(185, 185, 185);
+}
+.newDiv img{
+  width: 10%;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+}
+.fa-trash {
+  font-size: 24px;
+  color: rgb(255, 0, 0);
+  margin: 10px;
+}
+.fa-trash:hover {
+  color: rgb(221, 6, 6);
+  background-color: transparent;
+}
+.fa-money-check-dollar, .add-items {
+  color: green;
+  margin: 10px;
+  font-size: 24px;
+}
+.fa-money-check-dollar:hover, .fa-plus:hover {
+  color: rgb(66, 230, 66);
+  background-color: transparent;
+}
+.delete-btn, .to-check-out-btn, .add-items {
+  background-color: transparent;
+  border: none;
+}
+.cart-h1, .cart-h2, .cart-h3 {
+  font-size: 15px;
+  color: white;
+}
+.container {
+  display: flex;
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 1%;
+}
+.detailss{
+  position: absolute;
+  background-color: aqua;
+  color: grey;
+  width: 40%;
+  padding: 15px;
+  border-radius: 15px;
+  opacity: 0;
+  pointer-events: none;
+}
+.detailss2 {
+  position: absolute;
+  background-color: aqua;
+  color: grey;
+  width: 40%;
+  padding: 15px;
+  border-radius: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(20px);
+}
+.overlay {
+  color: black;
+  background-color: aqua;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s;
+  padding: 10px;
+  border-radius: 15px;
+}
+.img-with-details:hover .overlay {
+  opacity: 1;
+}
+.img-with-details {
+  position: relative;
+}
+.midnight {
+  width: 100%;
+  height: auto;
+}
+.fading {
+  transform: translateX(2000px);
+  opacity: 0;
+}
+header {
+  text-align: left;
+}
